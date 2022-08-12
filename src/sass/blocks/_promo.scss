@@ -1,0 +1,126 @@
+.promo{
+    width: 100%;
+    position: relative;
+    min-height: 878px;
+    background: url('../images/main/start-screen-background.jpg') center center/cover no-repeat;
+    padding-top: 30px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+        &_content{
+            display: flex;
+            flex-direction: column;
+            margin-top: 195px;
+        }
+        &_title{
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 44px;
+            line-height: 130%;
+            color: #fff;
+            margin-bottom: 42px;
+        }
+        &_descr{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            color: #fff;
+            margin-bottom: 42px;
+        }
+        &_img{
+            margin-top: 30px;
+            padding: 0;
+            img{
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .promo{
+        width: 100%;
+        position: relative;
+        min-height: 878px;
+        background: url('../images/main/start-screen-background.jpg') center center/cover no-repeat;
+        padding-top: 0;
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            &_content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 30px;
+            }
+            &_title{
+                text-align: left;
+                width: 65%;
+            }
+            &_img{
+                margin-top: 45px;
+                padding: 0;
+                img{
+                    display: block;
+                    margin-left: 140px;
+                    padding: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .promo{
+        width: 100%;
+        position: relative;
+        min-height: 823px;
+        padding-top: 0;
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+            }
+            &_content{
+                margin-top: 30px;
+            }
+            &_title{
+                width: 100%;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 130%;
+                letter-spacing: 0.06em;
+                text-align: center;
+            }
+            &_descr{
+                text-align: center;
+                br{
+                    display: none;
+                }
+            }
+            &_img{
+                margin-top: 105px;
+                padding: 0;
+                img{
+                    width: 260px;
+                    display: block;
+                    margin: 0 auto;
+                    margin-left: 40px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    
+}

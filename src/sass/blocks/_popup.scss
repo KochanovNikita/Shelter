@@ -1,0 +1,187 @@
+.popup {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    &__close {
+        width: 16px;
+        height: 16px;
+        background-color: initial;
+        border: #f1cdb3 2px solid;
+        position: absolute;
+        border-radius: 100px;
+        left: 98%;
+        top: -12%;
+        text-align: center;
+        padding: 15px 17px 17px 15px;
+        cursor: pointer;
+        &:hover{
+            background-color: $primary-color;
+        }
+        &_active{
+            background-color: $primary-color;
+        }
+    }
+
+    &__wrapper {
+        width: 900px;
+        min-height: 500px;
+        background-color: #fafafa;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        border-radius: 9px;
+    }
+    &__img {
+        width: 500px;
+        height: 500px;
+        img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    &__info {
+        height: initial;
+        position: relative;
+        margin-bottom: 73px;
+    }
+    &__title {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin: 0;
+        margin-top: 50px;
+    }
+    &__subtitle {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin: 0;
+        margin-top: 10px;
+    }
+    &__descr {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #000000;
+        margin-top: 40px;
+        padding-right: 20px;
+    }
+    &__list {
+        color: $primary-color;
+        margin-top: 40px;
+        font-family: "Georgia";
+        font-style: normal;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 11px;
+        strong {
+            color: #000000;
+        }
+        span {
+            color: #000000;
+        }
+    }
+}
+.block {
+    display: block;
+}
+
+@media screen and (max-width: 1279px) {
+    .popup {
+        &__close {
+            left: 96%;
+            top: -15%;
+        }
+        &__wrapper {
+            width: 630px;
+            min-height: 350px;
+            column-gap: 11px;
+            align-items: flex-start;
+        }
+        &__img {
+            width: 350px;
+            height: 350px;
+        }
+        &__info{
+            padding: 0;
+        }
+        &__title {
+            margin-top: 10px;
+        }
+        &__descr {
+            font-size: 13px;
+            margin-top: 20px;
+            padding-right: 5px;
+            line-height: 110%;
+        }
+        &__list {
+            margin-top: 20px;
+            row-gap: 6px;
+            strong {
+                color: #000000;
+            }
+            span {
+                color: #000000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .popup {
+        &__close {
+            left: 90%;
+        }
+        &__wrapper {
+            width: 75%;
+            min-height: 341px;
+            column-gap: 11px;
+        }
+        &__info{
+            padding:11px 10px;
+            margin: 0;
+        }
+        &__img {
+            display: none;
+        }
+        &__title {
+            margin: 0;
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__descr {
+            margin-top: 20px;
+            text-align:justify;
+            padding: 0;
+        }
+        &__list {
+            margin-top: 24px;
+            row-gap: 6px;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.frends{
+    width: 100%;
+    min-height: 697px;
+    padding: 80px 0 100px 0;
+    background-color: #F6F6F6;
+    position: relative;
+    a{
+        text-decoration: none;
+    }
+    &__pets{
+        padding: 80px 0 115px 0;
+    }
+    .slider{ 
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        &__main{
+            display: flex;
+            //justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            column-gap: 95px;
+        }
+        &__pets{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        &__card{
+            margin-top: 30px;
+            width: 270px;
+            height: 435px;
+            background-color: #FAFAFA;
+            &:hover{
+                box-shadow: 0px 0px 23px 6px rgba(34, 60, 80, 0.18);
+            }
+            &:hover .button__white{
+                background-color: $primary-color-light;
+            }
+            cursor: pointer;
+            &_img{
+                width: 100%;
+                height: 270px;
+                img{
+                    width: 100%;
+                }
+            }
+            &_name{
+                margin: 30px 0;
+                text-align: center;
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                color: $text-color;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    .navigation{
+        margin: 45px auto 0 auto;
+        width: 344px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow__position{
+        position: absolute;
+        top: 47%;
+        &_right{
+            left: 95.7%;
+        }
+    }
+}
+
+@keyframes add-animate {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes remove-animate {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+.add__animate{
+    animation: add-animate 1s;
+}
+
+.remove__animate{
+    animation: remove-animate 1s;
+}
+
+.opacity{
+    opacity: 1;
+
+}
+.opacity__noone{
+    opacity: 0;
+}
+@media screen and (max-width: 1279px) {
+    .frends{
+        width: 100%;
+        min-height: 697px;
+        padding: 80px 0 100px 0;
+        background-color: #F6F6F6;
+        position: relative;
+        a{
+            text-decoration: none;
+        }
+        &__pets{
+            padding: 80px 0 85px 0;
+        }
+        .slider{ 
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            column-gap: 40px;
+            width: 100%;
+            margin-top: 0;
+        }
+        .navigation{
+            margin: 30px auto 0 auto;
+        }
+        .pet{
+            &__none{
+                display: none;
+            }
+        }
+        .mt__30{
+            margin-top: 30px;
+        }
+        .arrow__position{
+            position: absolute;
+            display: block;
+            top: 47.5%;
+            &_right{
+                left: 92.5%;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .frends{
+        width: 100%;
+        min-height: 697px;
+        padding: 42px 0 42px 0;
+        background-color: #F6F6F6;
+        position: relative;
+        a{
+            text-decoration: none;
+        }
+        &__pets{
+            padding: 42px 0 52px 0;
+        }
+        .slider{ 
+            position: relative;
+            margin-top: 10px;
+        }
+        .navigation{
+            width: 300px;
+            margin: 30px auto 0 auto;
+        }
+        .pet{
+            margin-top: 30px;
+            &__none{
+                display: none;
+            }
+        }
+        .mt__30{
+            margin-top: 12px;
+        }
+        .arrow__position{
+            position: absolute;
+            display: block;
+            bottom: 15%;
+            top: auto;
+            &_left{
+                left: 20%;
+            }
+            &_right{
+                left: 63%;
+            }
+        }
+    }
+}

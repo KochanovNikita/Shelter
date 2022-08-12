@@ -1,0 +1,107 @@
+.about{
+    width: 100%;
+    min-height: 408px;
+    background: #fff;
+    padding: 80px 0 100px 0;
+    &__wrapper{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        margin: 0;
+        width: 420px;
+    }
+    &__text{
+        margin: 0;
+        align-content: center;
+        max-width: 430px;
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 25px;
+    }
+    &__descr{
+        margin: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .about{
+        padding: 80px 0 100px 0;
+        &__wrapper{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__img{
+            margin-top: 80px;
+            width: 420px;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__text{
+            margin-top: 0;
+            align-content: center;
+            max-width: 430px;
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 25px;
+        }
+        &__descr{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about{
+        padding: 42px 0;
+        &__wrapper{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            width: 270px;
+            margin: 0 auto;
+        }
+        &__img{
+            margin-top: 40px;
+            width: 100%;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: 260px;
+            }
+        }
+        &__text{
+            width: 270px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 23px;
+        }
+        &__descr{
+            width: 270px;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            text-align: justify;
+            margin: 0 auto;
+        }
+    }
+}

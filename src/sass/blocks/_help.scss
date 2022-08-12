@@ -1,0 +1,105 @@
+.help{
+    width: 100%;
+    min-height: 431px;
+    padding: 80px 0 100px 0;
+
+    &__wrapper{
+        padding: 0;
+        margin: 0 80px;
+        margin-top: 60px;
+        min-height: 270px;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        row-gap: 50px;
+        column-gap: 130px;
+    }
+    
+    &__item:nth-child(even){
+        align-self: flex-end;
+    }
+    &__img{
+        height: 60px;
+        text-align: center;
+        img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+    &__title{
+        margin-top: 30px;
+        color: $text-color;
+        text-align: center;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .help{
+        &__wrapper{
+            padding: 0 40px;
+            margin: 0 auto;
+            margin-top: 60px;
+            justify-content: space-between;
+            row-gap: 55px;
+            column-gap: 45px;
+        }
+        &__item{
+            width: 170px;
+        }
+        &__title{
+            margin-top: 30px;
+            color: $text-color;
+            text-align: center;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .help{
+        padding: 42px 0;
+        &__wrapper{
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+        &__item{
+            width: 130px;
+        }
+        &__img{
+            height: 50px;
+            text-align: center;
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &__title{
+            margin-top: 20px;
+            color: $text-color;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 110%;
+            letter-spacing: 0.06em;
+        }
+    }
+}

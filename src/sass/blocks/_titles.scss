@@ -1,0 +1,31 @@
+.title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: #545454;
+    letter-spacing: 0.06em;
+    margin: 0;
+    &__center{
+        text-align: center;
+    }
+    &__white{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title{
+        width: 300px;
+        margin: 0 auto;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+    }
+}

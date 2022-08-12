@@ -1,0 +1,187 @@
+.carousel{ 
+    position: relative;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    column-gap: 95px;
+    left: -110%;
+    &__wrapper{
+       position: relative;
+       width: 82%;
+       margin: 0 auto;
+       overflow: hidden;
+    }
+    &__item{
+        display: flex;
+        column-gap: 90px;
+    }
+    &__pets{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    &__card{
+        margin-top: 30px;
+        width: 270px;
+        height: 435px;
+        background-color: #FAFAFA;
+        &:hover{
+            //box-shadow: 0px 0px 10px 6px rgba(34, 60, 80, 0.18);
+            background-color: #e7e7e7;
+        }
+        &:hover .button__white{
+            background-color: $primary-color-light;
+        }
+        cursor: pointer;
+        &_img{
+            width: 100%;
+            height: 270px;
+            img{
+                width: 100%;
+            }
+        }
+        &_name{
+            margin: 30px 0;
+            text-align: center;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: $text-color;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
+@keyframes move-left {
+    from{left: -110%}
+    to{left: 0}
+}
+
+.transition-left{
+    animation: move-left 2s;
+}
+
+@keyframes move-right {
+    from{left: -110%}
+    to{left: -220%;}
+}
+.transition-right{
+    animation: move-right 2s;
+}
+
+@media screen and (max-width: 1279px){
+    .carousel{ 
+        position: relative;
+        width: 80%;
+        margin-top: 0;
+        display: flex;
+        column-gap: 40px;
+        left: -107%;
+        &__wrapper{
+           position: relative;
+           width: 82%;
+           margin: 0 auto;
+           overflow: hidden;
+        }
+        &__item{
+            display: flex;
+            column-gap: 40px;
+        }
+       
+    }
+    
+    @keyframes move-left {
+        from{left: -107%}
+        to{left: 0}
+    }
+    
+    .transition-left{
+        animation: move-left 2s;
+    }
+    
+    @keyframes move-right {
+        from{left: -107%}
+        to{left: -213%;}
+    }
+    .transition-right{
+        animation: move-right 2s;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carousel{ 
+        position: relative;
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        column-gap: 95px;
+        left: -150%;
+        &__wrapper{
+           position: relative;
+           width: 82%;
+           margin: 0 auto;
+           overflow: hidden;
+        }
+        &__item{
+            display: flex;
+            column-gap: 90px;
+        }
+        &__pets{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+        &__card{
+            margin-top: 0;
+            width: 270px;
+            height: 435px;
+            background-color: #FAFAFA;
+            &:hover{
+                box-shadow: 0px 0px 23px 6px rgba(34, 60, 80, 0.18);
+            }
+            &:hover .button__white{
+                background-color: $primary-color-light;
+            }
+            cursor: pointer;
+            &_img{
+                width: 100%;
+                height: 270px;
+                img{
+                    width: 100%;
+                }
+            }
+            &_name{
+                margin: 30px 0;
+                text-align: center;
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                color: $text-color;
+                letter-spacing: 0.05em;
+            }
+        }
+    }
+    
+    @keyframes move-left {
+        from{left: -150%}
+        to{left: 0}
+    }
+    
+    .transition-left{
+        animation: move-left 1s;
+    }
+    
+    @keyframes move-right {
+        from{left: -150%}
+        to{left: -300%;}
+    }
+    .transition-right{
+        animation: move-right 1s;
+    }
+}
